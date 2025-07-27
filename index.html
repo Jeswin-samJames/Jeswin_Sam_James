@@ -234,6 +234,136 @@
   .project-link:hover .arrow {
     transform: translateX(5px);
   }
+
+  /* ========== MEDIA QUERIES ========== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navy-light);
+    border-bottom: 1px solid #233554;
+  }
+
+  aside nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  aside nav ul li {
+    margin: 0;
+  }
+
+  aside .socials {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    width: 100%;
+  }
+
+  section {
+    padding: 2rem 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .project {
+    padding: 16px;
+    margin: 1.5rem 0;
+    border-left: none;
+    border-top: 3px solid var(--green);
+    border-radius: 8px;
+  }
+
+  .projects .project-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-list {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .project-link .arrow {
+    display: inline-block;
+    margin-left: 4px;
+    transition: transform 0.3s;
+  }
+
+  .project-link:hover .arrow {
+    transform: translateX(5px);
+  }
+
+  .project-link span::after {
+    bottom: -1px;
+  }
+
+  .mt-4.text-center {
+    margin-top: 1.5rem;
+  }
+
+  /* Responsive resume button */
+  .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
+  .experience .role ul {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .experience .role ul li {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  aside nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .project-link {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+  }
+}
+
+    </style>
+
+    <style>
+      
     </style>
   </head>
   <body>
@@ -250,10 +380,10 @@
           </nav>
         </div>
        <div class="socials" style="margin-top: 40px;">
-  <a href="https://github.com/jeswinsamjames" target="_blank" aria-label="GitHub" title="github.com/jeswinsamjames" style="margin-right: 15px;">
+  <a href="https://github.com/Jeswin-samJames" target="_blank" aria-label="GitHub" title="github.com/jeswinsamjames" style="margin-right: 15px;">
     <i class="fab fa-github fa-xl" style="color: #ffffff;"></i>
   </a>
-  <a href="https://linkedin.com/in/jeswin-sam-james" target="_blank" aria-label="LinkedIn" title="linkedin.com/in/jeswin-sam-james" style="margin-right: 15px;">
+  <a href="https://www.linkedin.com/in/jeswin-sam-james-/" target="_blank" aria-label="LinkedIn" title="linkedin.com/in/jeswin-sam-james" style="margin-right: 15px;">
     <i class="fab fa-linkedin fa-xl" style="color: #ffffff;"></i>
   </a>
   <a href="mailto:jeswinsamjames@gmail.com" aria-label="Email" title="jeswinsamjames@gmail.com" style="margin-right: 15px;">

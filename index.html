@@ -518,6 +518,39 @@ Collaborated in Agile sprints and gained hands-on exposure to Git workflows and 
           <h2>Things I've Built</h2>
 
           <div class="project">
+            <h3 class="project-title"> 📺 Rumble Video ETL Pipeline</h3>
+            <p>
+              A PySpark-based ETL pipeline designed using the <b>Datalake Medallion Architecture</b> 
+              (Bronze → Silver → Gold) for structured, incremental data processing.  
+              The pipeline ingests raw JSON video data from Rumble, transforms it into analytical datasets, 
+              and stores outputs in optimized <b>Parquet</b> format for downstream analytics.
+            </p>
+
+            <h4>✨ Key Features</h4>
+            <ul>
+              <li><b>Bronze Layer</b> – Stores raw JSON data as Parquet without transformations.</li>
+              <li><b>Silver Layer</b> – Flattens nested JSON, selects required fields, and splits into multiple Parquet files.</li>
+              <li><b>Gold Layer</b> – Performs advanced transformations:
+                <ul>
+                  <li>Explodes <code>video_tags</code> into individual rows.</li>
+                  <li>Calculates <code>number_of_comments</code> and distinct <code>number_of_commented_users</code>.</li>
+                  <li>Filters videos where <b>host = Benny Johnson</b> and <b>tag = news</b>.</li>
+                  <li>User-level engagement metrics (total comments, likes per user per video).</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h4>🛠 Tech Stack</h4>
+            <p class="tech-list">PySpark · JSON · Parquet · Python · Data Engineering</p>
+
+           
+            <br><br>
+            <a href="https://github.com/Jeswin-samJames/Rumble_video_pipeline" class="btn" target="_blank">🔗 View Code on GitHub</a>
+            <br><br>
+          </div>
+
+
+          <div class="project">
             <h3 class="project-title"> 🤖 PCV Order Acceptance Bot</h3>
             <p>
               Intelligent automation tool that logs into the PCV Murcor portal, reads order-related emails,
